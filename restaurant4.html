@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!-- HTML5 문서임을 명시 -->
+<html lang="ko"> <!-- 문서의 언어 설정 (한국어) -->
+
+<head>
+  <meta charset="UTF-8"> <!-- 문자 인코딩 (한글 깨짐 방지) -->
+  <title>마라탕</title> <!-- 브라우저 탭에 표시될 제목 -->
+  <link rel="stylesheet" href="style.css"> <!-- 공통 스타일시트 연결 -->
+
+  <!-- 이 페이지에만 적용되는 스타일 -->
+  <style>
+    body { font-family: Arial, sans-serif; } /* 본문 글꼴 설정 */
+    main { text-align: center; padding: 20px; } /* 본문 중앙 정렬, 여백 */
+    table {
+      margin: 0 auto; /* 표 중앙 정렬 */
+      border-collapse: collapse; /* 셀 테두리 겹침 제거 */
+      width: 80%; /* 표 너비 */
+    }
+    th, td {
+      border: 1px solid #ccc; /* 셀 테두리 색 */
+      padding: 10px; /* 셀 안쪽 여백 */
+    }
+    tr:hover {
+      background-color: #f9f9f9; /* 마우스 올렸을 때 배경색 */
+    }
+    img {
+      width: 300px; /* 이미지 너비 */
+      height: auto; /* 비율 유지 */
+      margin-bottom: 20px; /* 아래 여백 */
+      border-radius: 8px; /* 모서리 둥글게 */
+    }
+    iframe {
+      margin-top: 20px; /* 위 여백 */
+      border: none; /* 테두리 없음 */
+      width: 90%; /* 지도 너비 */
+      max-width: 600px; /* 최대 너비 제한 */
+      height: 300px; /* 높이 */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 헤더: 식당 이름 -->
+  <header><h1>마라탕</h1></header>
+
+  <!-- 메인 콘텐츠 영역 -->
+  <main>
+    <!-- 대표 이미지 -->
+    <img src="media/malatang.jpg" alt="마라탕">
+
+    <!-- 정보 테이블 -->
+    <table>
+       <tr><th>주요 메뉴</th><td>마라탕, 마라샹궈, 꿔바로우</td></tr>
+       <tr><th>가격대</th><td>8,000 ~ 11,000원</td></tr>
+       <tr><th>주소</th><td>서울 강북구 우이동 71-12</td></tr>
+       <tr><th>운영시간</th><td>11:00 ~ 22:00</td></tr>
+    </table>
+
+    <!-- 출처 링크 (외부 지도) -->
+    <p>
+      <a href="https://map.naver.com/v5/search/마라탕" target="_blank">출처: 네이버 지도</a>
+    </p>
+
+    <!-- 네이버 지도 링크 -->
+    <iframe 
+      src="https://map.naver.com/p/search/%EB%8D%95%EC%84%B1%EC%97%AC%EB%8C%80%20%EA%B7%BC%EC%B2%98%20%EB%A7%88%EB%9D%BC%ED%83%95/place/1607121642?c=15.00,0,0,0,dh&placePath=%3Fentry%253Dbmp" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </main>
+</body>
+</html>
