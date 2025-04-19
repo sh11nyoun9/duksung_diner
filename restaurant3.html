@@ -1,0 +1,69 @@
+<!DOCTYPE html> <!-- HTML5 문서임을 명시 -->
+<html lang="ko"> <!-- 문서 언어를 한국어로 설정 -->
+
+<head>
+  <meta charset="UTF-8"> <!-- 문자 인코딩 설정 (한글 깨짐 방지) -->
+  <title>돈까스</title> <!-- 브라우저 탭에 표시될 제목 -->
+  <link rel="stylesheet" href="style.css"> <!-- 외부 CSS 연결 (공통 스타일 적용) -->
+
+  <!-- 이 페이지 전용 스타일 -->
+  <style>
+    body { font-family: Arial, sans-serif; } /* 본문 전체 글꼴 */
+    main { text-align: center; padding: 20px; } /* 본문 가운데 정렬, 여백 설정 */
+    table {
+      margin: 0 auto; /* 표 가운데 정렬 */
+      border-collapse: collapse; /* 테두리 중복 제거 */
+      width: 80%; /* 표 너비 설정 */
+    }
+    th, td {
+      border: 1px solid #ccc; /* 셀 테두리 색 */
+      padding: 10px; /* 셀 안쪽 여백 */
+    }
+    tr:hover {
+      background-color: #f9f9f9; /* 마우스 오버 시 배경색 */
+    }
+    img {
+      width: 300px; /* 이미지 너비 */
+      height: auto; /* 높이는 비율 유지 */
+      margin-bottom: 20px; /* 아래 여백 */
+      border-radius: 8px; /* 모서리 둥글게 */
+    }
+    iframe {
+      margin-top: 20px; /* 위 여백 */
+      border: none; /* 테두리 없음 */
+      width: 90%; /* 너비 */
+      max-width: 600px; /* 최대 너비 제한 */
+      height: 300px; /* 높이 */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 페이지 헤더 -->
+  <header><h1>돈까스</h1></header>
+
+  <!-- 페이지 본문 -->
+  <main>
+    <!-- 대표 이미지 -->
+    <img src="media/donkatsu.jpg" alt="돈까스">
+
+    <!-- 가게 정보 테이블 -->
+    <table>
+       <tr><th>주요 메뉴</th><td>돈까스, 우동, 덮밥</td></tr>
+       <tr><th>가격대</th><td>7,000 ~ 10,000원</td></tr>
+       <tr><th>주소</th><td>서울 강북구 수유동 192-35</td></tr>
+       <tr><th>운영시간</th><td>10:30 ~ 20:00</td></tr>
+    </table>
+
+    <!-- 출처 링크 -->
+    <p><a href="https://map.naver.com/v5/search/동네돈까스" target="_blank">출처: 네이버 지도</a></p>
+
+    <!-- 네이버 지도 링크 -->
+    <iframe 
+      src="https://map.naver.com/p/search/%EB%8D%95%EC%84%B1%EC%97%AC%EB%8C%80%20%EA%B7%BC%EC%B2%98%20%EB%8F%88%EA%B9%8C%EC%8A%A4?c=15.00,0,0,0,dh" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </main>
+</body>
+</html>
