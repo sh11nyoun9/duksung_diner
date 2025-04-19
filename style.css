@@ -1,0 +1,30 @@
+/* 전체 페이지의 폰트 설정 및 배경 색상 */
+body {
+  font-family: 'Arial', sans-serif; /* 기본 폰트는 Arial */
+  background-color: #fefefe; /* 배경 색상은 연한 흰색 */
+  margin: 20px; /* 페이지 가장자리와의 여백 */
+}
+
+/* 페이지 제목 스타일 */
+h1 {
+  color: #333; /* 글자 색은 짙은 회색 */
+  text-align: center; /* 제목을 중앙 정렬 */
+}
+
+/* 테이블 설정 */
+table {
+  border-collapse: collapse; /* 테이블 셀 간 경계가 겹치지 않게 설정 */
+  width: 100%; /* 테이블 너비를 화면의 100%로 설정 */
+}
+
+/* 테이블의 헤더와 셀에 대한 스타일 */
+th, td {
+  border: 1px solid #ddd; /* 테이블 셀에 연한 회색 테두리 */
+  padding: 10px; /* 셀 안의 여백 */
+  text-align: center; /* 텍스트를 중앙 정렬 */
+}
+
+/* 마우스를 올렸을 때 행의 배경 색을 변화시켜서 강조 */
+tr:hover {
+  background-color: #f0f0f0; /* 마우스를 올리면 배경 색을 연한 회색으로 변경 */
+}
